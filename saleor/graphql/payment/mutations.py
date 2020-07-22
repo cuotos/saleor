@@ -256,7 +256,7 @@ class PaymentSecureConfirm(BaseMutation):
         error_type_field = "payment_errors"
 
     @classmethod
-    def perform_mutation(cls, _root, info, payment_id, payment_data):
+    def perform_mutation(cls, _root, info, payment_id):
         payment = cls.get_node_or_error(
             info, payment_id, field="payment_id", only_type=Payment
         )
