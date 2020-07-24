@@ -51,7 +51,7 @@ class OrderEvents:
     PAYMENT_REFUNDED = "payment_refunded"
     PAYMENT_VOIDED = "payment_voided"
     PAYMENT_FAILED = "payment_failed"
-    PAYMENT_GATEWAY_NOTIFICATION = "payment_gateway_notification"
+    EXTERNAL_SERVICE_NOTIFICATION = "external_service_notification"
 
     FULFILLMENT_CANCELED = "fulfillment_canceled"
     FULFILLMENT_RESTOCKED_ITEMS = "fulfillment_restocked_items"
@@ -76,7 +76,7 @@ class OrderEvents:
         (EMAIL_SENT, "The email was sent"),
         (PAYMENT_AUTHORIZED, "The payment was authorized"),
         (PAYMENT_CAPTURED, "The payment was captured"),
-        (PAYMENT_GATEWAY_NOTIFICATION, "Notification from payment gateway"),
+        (EXTERNAL_SERVICE_NOTIFICATION, "Notification from external service"),
         (PAYMENT_REFUNDED, "The payment was refunded"),
         (PAYMENT_VOIDED, "The payment was voided"),
         (PAYMENT_FAILED, "The payment was failed"),
